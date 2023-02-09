@@ -28,11 +28,8 @@ export const PrimaryInput = (props: ComponentPropsWithRef<"input">) => {
         onChange={handleChange}
         id="primaryInput"
         ref={primaryRef}
-        className="p-4 text-xl transition rounded-sm focus:ring-0 w-full border-0 focus:shadow-inner focus:shadow-theme-pink/25"
+        className="p-4 text-xl transition rounded-sm focus:ring-0 w-full border-0 focus:shadow-inner focus:shadow-theme-pink/25 placeholder:text-gray-300"
       />
-      {/* <p className="text-white text-left">
-        Type: {options.type}, Required: {`${options.required}`}
-      </p> */}
     </div>
   );
 };

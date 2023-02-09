@@ -15,7 +15,7 @@ export function Required() {
           aria-describedby="required-description"
           name="required"
           type="checkbox"
-          className="h-4 w-4 rounded border-gray-300 text-theme-purple focus:ring-theme-purple transition cursor-pointer"
+          className="h-6 w-6 rounded border-gray-300 text-theme-purple focus:ring-theme-purple transition cursor-pointer"
         />
       </div>
       <label

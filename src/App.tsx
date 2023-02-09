@@ -1,3 +1,4 @@
+import { Input } from "~/components/common/Input";
 import { Header } from "~/components/Header";
 import { InputTypes } from "~/components/InputTypes";
 import { PrimaryInput } from "~/components/PrimaryInput";
@@ -10,7 +11,7 @@ function App() {
     <InputContextProvider>
       <Header />
       <div className="max-w-screen-xl mx-auto p-8">
-        <div className="mt-12 flex flex-col items-center max-w-md mx-auto">
+        <div className="mt-6 flex flex-col items-center max-w-md mx-auto">
           <p className="text-gray-500 text-sm mb-1 self-start ml-1">
             Tip! Hover over the input to see the browser&apos;s native tooltip
           </p>
@@ -20,10 +21,17 @@ function App() {
           {/* Options */}
           <div className="space-y-8 col-span-4 px-8 flex flex-col">
             <h2 className="font-bold text-lg tracking-wide w-full bg-theme-purple/10 rounded p-2">
-              Input Options
+              Options
             </h2>
             <InputTypes />
             <Required />
+            <div className="space-y-4">
+              <Input label="minLength" name="minLength" />
+              <Input label="maxLength" name="maxLength" />
+              <Input label="pattern" name="pattern" />
+              <Input label="min" name="min" />
+              <Input label="max" name="max" />
+            </div>
           </div>
           <div className="col-span-3">
             <ValidityState />

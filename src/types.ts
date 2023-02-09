@@ -5,7 +5,7 @@ export type InputOptions = {
   minLength?: number;
   maxLength?: number;
   min?: string;
-  max?: number;
+  max?: string;
   pattern?: string;
   autocomplete?: AutocompleteOptions;
 };
